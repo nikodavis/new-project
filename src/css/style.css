@@ -1,0 +1,21 @@
+.container{
+    background-color: white;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: sans-serif;
+
+}
+
+.item{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+.item.img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

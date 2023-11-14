@@ -3,19 +3,28 @@
     margin: 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     font-family: sans-serif;
-
 }
 
-.item{
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
+.item {
+    width: 100%; 
+    max-width: 300px; 
+    margin-bottom: 15px; 
 }
 
-.item.img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.item button{
+    width: 50%;
+    font-size: 35px;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 50%;
 }

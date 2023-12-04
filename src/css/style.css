@@ -1,21 +1,70 @@
+body{
+    margin: 0; /* eliminar margen */
+    overflow: hidden; /* scroll ocultar */
+}
+
+.navbar{
+    background-color: black;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+
+}
+
+.nav-link {
+    margin-right: 55px; 
+}
+
+.logo a, .nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.espacio-search{
+    border-radius: 8px;
+    height: 35px ;
+}
+
+.button-search{
+    border-radius: 8px;
+    background-color: transparent;
+    border-color: #fefbd8;   
+    color: white;
+    width: 120px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.button-search:active {
+    background-color: #f4e1d2 ;
+}
+
 .contenedor {
     display: inline-block; /* contenedor en bloque en linea */
     margin: 15px; /* margin de 15px alrededor de contenedor */
 }
-  
+
 .recuadro-desplegable {
     background-color: whitesmoke;
     border: 1px solid grey;
     border-radius: 8px; /* borde redondeado */
-    padding: 70px; /* espacio interno del recuadro */
-    cursor: pointer; /* cursor cambia a manito*/
+    padding: 60px 120px; /* espacio interno del recuadro */
+    cursor: pointer; /* cambia a manito*/
 }
-  
+
 .mas {
     font-weight: bold; /* fuente en negrita */
     font-size: 30px; /* tamaño fuente */
 }
-  
+
 .contenido-desplegable {
     display: none ; /* inicialmente no hay contenido, se oculta */
     position: absolute; /*  */
@@ -24,12 +73,12 @@
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; /* sombra */
     border-radius: 8px; /* despliegue redondeado */
 }
-  
+
 /* Cuando el mouse esta sobre el recuadro, muestra el contenido */
 .desplegable:hover .contenido-desplegable {
     display: block; /* Muestra el contenido desplegable en bloque*/
 }
-  
+
 .contenido-desplegable a{
     color: black;
     padding: 12px 16px; /* Espaciado interno del enlace desplegable */
@@ -37,29 +86,29 @@
     display: block;  
     border-bottom: 1px solid whitesmoke; /* borde desplegable */
 }
-  
+
 .contenido-desplegable a:hover {
     background-color: whitesmoke; /* Cambia el color de fondo al pasar sobre el enlace */
 }
-  
+
 .footer{
     background-color: black;
-    color: rgb(44, 44, 44);
+    font-family: sans-serif;
     text-align: center; 
-    padding: 20px;
-    position: absolute;
+    padding: 25px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer a{
     color: white;
     text-decoration: none;
-    margin: 3px;
+    margin: 5px;
     
 }
 
-.footer-izquierda{
-    display: flex;
-    flex-direction: column;
+.footer p{
+    color: rgb(26, 25, 25);
 }
 
